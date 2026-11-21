@@ -11,6 +11,7 @@
   [![POS Hardware](https://img.shields.io/badge/POS_Print-80mm_Thermal-00cec9?style=for-the-badge&logo=print&logoColor=white)](#55-80mm-thermal-pos-receipt-slip-printer)
   [![WhatsApp Dispatch](https://img.shields.io/badge/WhatsApp-1--Click_Alerts-25D366?style=for-the-badge&logo=whatsapp&logoColor=white)](#54-1-click-direct-whatsapp-client-alert)
   [![Test Suite](https://img.shields.io/badge/Automated_Tests-100%25_Passing-2ed573?style=for-the-badge&logo=checkmarx&logoColor=white)](#-automated-testing--health-check-suite)
+  [![License: MIT](https://img.shields.io/badge/License-MIT-F1C40F?style=for-the-badge&logo=open-source-initiative&logoColor=black)](LICENSE)
 
   <p align="center">
     <strong>The Premier Men's Luxury Grooming Lounge &amp; Cloud-Connected Enterprise Salon Management Ecosystem.</strong><br/>
@@ -49,6 +50,7 @@
 - [9. Quick Start in 60 Seconds (Run &amp; Build)](#9-quick-start-in-60-seconds-run--build)
 - [10. Automated Testing &amp; Health Check Suite](#10-automated-testing--health-check-suite)
 - [11. Viva Voce &amp; Presentation Defense Guide](#11-viva-voce--presentation-defense-guide)
+- [12. License](#12-license)
 
 ---
 
@@ -406,6 +408,12 @@ If you are defending this project for an academic evaluation, portfolio review, 
 
 > **Answer:** The system uses CSS `@media print` directives to isolate the receipt slip, eliminate margins, enforce 80mm roll width, and apply high-contrast monochrome styles with an auto-triggered `window.print()` JavaScript routine.
 </details>
+
+---
+
+## 12. License
+
+This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
 
 ---
 
