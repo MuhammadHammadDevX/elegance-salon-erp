@@ -1,0 +1,120 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 320" width="100%" height="100%">
+  <defs>
+    <linearGradient id="chairBg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#1b1813" />
+      <stop offset="100%" stop-color="#0d0c09" />
+    </linearGradient>
+
+    <filter id="chairGlow">
+      <feDropShadow dx="0" dy="6" stdDeviation="6" flood-color="#000000" flood-opacity="0.6" />
+    </filter>
+
+    <style>
+      .chair-card { transition: all 0.25s ease; }
+      @keyframes pulseOcc {
+        0%, 100% { fill: #ff4757; opacity: 0.8; }
+        50% { fill: #ff6b81; opacity: 1; }
+      }
+      @keyframes pulseAvail {
+        0%, 100% { fill: #2ed573; opacity: 0.8; }
+        50% { fill: #7bed9f; opacity: 1; }
+      }
+      .occ-dot { animation: pulseOcc 1.8s infinite ease-in-out; }
+      .avail-dot { animation: pulseAvail 2.4s infinite ease-in-out; }
+    </style>
+  </defs>
+
+  <!-- Canvas Background -->
+  <rect width="1200" height="320" rx="16" fill="#090908" stroke="#221e17" stroke-width="1.5" />
+
+  <!-- Header -->
+  <g transform="translate(40, 40)">
+    <text x="0" y="0" fill="#f1d78a" font-family="'Playfair Display', Georgia, serif" font-size="20" font-weight="bold">Live Floor &amp; 6-Chair Occupancy Matrix</text>
+    <text x="0" y="22" fill="#8e8470" font-family="'Segoe UI', Roboto, sans-serif" font-size="12">Karachi PECHS Lounge • Real-time Hardware Synchronization • POS Counter View</text>
+  </g>
+
+  <!-- 6 Chairs Grid -->
+  <!-- Chair 1 -->
+  <g transform="translate(40, 85)" class="chair-card" filter="url(#chairGlow)">
+    <rect width="170" height="195" rx="12" fill="url(#chairBg)" stroke="#d4af37" stroke-width="1.5" />
+    <circle cx="24" cy="28" r="5" class="occ-dot" />
+    <text x="36" y="32" fill="#ff4757" font-family="monospace" font-size="10.5" font-weight="bold">IN SERVICE</text>
+    <text x="20" y="65" fill="#fff" font-family="'Playfair Display', serif" font-size="18" font-weight="bold">Chair #1</text>
+    <text x="20" y="86" fill="#dfb75c" font-family="'Segoe UI', sans-serif" font-size="12" font-weight="600">VIP Master Chair</text>
+    
+    <line x1="20" y1="102" x2="150" y2="102" stroke="#2a251b" />
+    <text x="20" y="125" fill="#a89f89" font-family="'Segoe UI', sans-serif" font-size="11">Stylist: <tspan fill="#fff">Master Asif</tspan></text>
+    <text x="20" y="145" fill="#a89f89" font-family="'Segoe UI', sans-serif" font-size="11">Client: <tspan fill="#fff">Hamza F.</tspan></text>
+    <text x="20" y="172" fill="#eccc68" font-family="monospace" font-size="10.5">⏱️ 38m Elapsed</text>
+  </g>
+
+  <!-- Chair 2 -->
+  <g transform="translate(230, 85)" class="chair-card" filter="url(#chairGlow)">
+    <rect width="170" height="195" rx="12" fill="url(#chairBg)" stroke="#2ed573" stroke-width="1.5" />
+    <circle cx="24" cy="28" r="5" class="avail-dot" />
+    <text x="36" y="32" fill="#2ed573" font-family="monospace" font-size="10.5" font-weight="bold">AVAILABLE</text>
+    <text x="20" y="65" fill="#fff" font-family="'Playfair Display', serif" font-size="18" font-weight="bold">Chair #2</text>
+    <text x="20" y="86" fill="#7bed9f" font-family="'Segoe UI', sans-serif" font-size="12" font-weight="600">Precision Fade</text>
+    
+    <line x1="20" y1="102" x2="150" y2="102" stroke="#2a251b" />
+    <text x="20" y="125" fill="#a89f89" font-family="'Segoe UI', sans-serif" font-size="11">Stylist: <tspan fill="#fff">Sufiyan Barber</tspan></text>
+    <text x="20" y="145" fill="#a89f89" font-family="'Segoe UI', sans-serif" font-size="11">Status: <tspan fill="#2ed573">Ready for Walk-in</tspan></text>
+    <text x="20" y="172" fill="#2ed573" font-family="monospace" font-size="10.5">🟢 Seat Client</text>
+  </g>
+
+  <!-- Chair 3 -->
+  <g transform="translate(420, 85)" class="chair-card" filter="url(#chairGlow)">
+    <rect width="170" height="195" rx="12" fill="url(#chairBg)" stroke="#d4af37" stroke-width="1.5" />
+    <circle cx="24" cy="28" r="5" class="occ-dot" />
+    <text x="36" y="32" fill="#ff4757" font-family="monospace" font-size="10.5" font-weight="bold">IN SERVICE</text>
+    <text x="20" y="65" fill="#fff" font-family="'Playfair Display', serif" font-size="18" font-weight="bold">Chair #3</text>
+    <text x="20" y="86" fill="#dfb75c" font-family="'Segoe UI', sans-serif" font-size="12" font-weight="600">Beard &amp; Spa Lounge</text>
+    
+    <line x1="20" y1="102" x2="150" y2="102" stroke="#2a251b" />
+    <text x="20" y="125" fill="#a89f89" font-family="'Segoe UI', sans-serif" font-size="11">Stylist: <tspan fill="#fff">Aliyan Groomer</tspan></text>
+    <text x="20" y="145" fill="#a89f89" font-family="'Segoe UI', sans-serif" font-size="11">Client: <tspan fill="#fff">Daniyal C.</tspan></text>
+    <text x="20" y="172" fill="#eccc68" font-family="monospace" font-size="10.5">⏱️ 14m Elapsed</text>
+  </g>
+
+  <!-- Chair 4 -->
+  <g transform="translate(610, 85)" class="chair-card" filter="url(#chairGlow)">
+    <rect width="170" height="195" rx="12" fill="url(#chairBg)" stroke="#2ed573" stroke-width="1.5" />
+    <circle cx="24" cy="28" r="5" class="avail-dot" />
+    <text x="36" y="32" fill="#2ed573" font-family="monospace" font-size="10.5" font-weight="bold">AVAILABLE</text>
+    <text x="20" y="65" fill="#fff" font-family="'Playfair Display', serif" font-size="18" font-weight="bold">Chair #4</text>
+    <text x="20" y="86" fill="#7bed9f" font-family="'Segoe UI', sans-serif" font-size="12" font-weight="600">Executive Chair</text>
+    
+    <line x1="20" y1="102" x2="150" y2="102" stroke="#2a251b" />
+    <text x="20" y="125" fill="#a89f89" font-family="'Segoe UI', sans-serif" font-size="11">Stylist: <tspan fill="#fff">Zafar Ali</tspan></text>
+    <text x="20" y="145" fill="#a89f89" font-family="'Segoe UI', sans-serif" font-size="11">Status: <tspan fill="#2ed573">Station Cleaned</tspan></text>
+    <text x="20" y="172" fill="#2ed573" font-family="monospace" font-size="10.5">🟢 Seat Client</text>
+  </g>
+
+  <!-- Chair 5 -->
+  <g transform="translate(800, 85)" class="chair-card" filter="url(#chairGlow)">
+    <rect width="170" height="195" rx="12" fill="url(#chairBg)" stroke="#d4af37" stroke-width="1.5" />
+    <circle cx="24" cy="28" r="5" class="occ-dot" />
+    <text x="36" y="32" fill="#ff4757" font-family="monospace" font-size="10.5" font-weight="bold">IN SERVICE</text>
+    <text x="20" y="65" fill="#fff" font-family="'Playfair Display', serif" font-size="18" font-weight="bold">Chair #5</text>
+    <text x="20" y="86" fill="#dfb75c" font-family="'Segoe UI', sans-serif" font-size="12" font-weight="600">Color Bar &amp; Spa</text>
+    
+    <line x1="20" y1="102" x2="150" y2="102" stroke="#2a251b" />
+    <text x="20" y="125" fill="#a89f89" font-family="'Segoe UI', sans-serif" font-size="11">Stylist: <tspan fill="#fff">Zachary N.</tspan></text>
+    <text x="20" y="145" fill="#a89f89" font-family="'Segoe UI', sans-serif" font-size="11">Client: <tspan fill="#fff">Saad Khan</tspan></text>
+    <text x="20" y="172" fill="#eccc68" font-family="monospace" font-size="10.5">⏱️ 52m Elapsed</text>
+  </g>
+
+  <!-- Chair 6 -->
+  <g transform="translate(990, 85)" class="chair-card" filter="url(#chairGlow)">
+    <rect width="170" height="195" rx="12" fill="url(#chairBg)" stroke="#2ed573" stroke-width="1.5" />
+    <circle cx="24" cy="28" r="5" class="avail-dot" />
+    <text x="36" y="32" fill="#2ed573" font-family="monospace" font-size="10.5" font-weight="bold">AVAILABLE</text>
+    <text x="20" y="65" fill="#fff" font-family="'Playfair Display', serif" font-size="18" font-weight="bold">Chair #6</text>
+    <text x="20" y="86" fill="#7bed9f" font-family="'Segoe UI', sans-serif" font-size="12" font-weight="600">Shampoo Basin</text>
+    
+    <line x1="20" y1="102" x2="150" y2="102" stroke="#2a251b" />
+    <text x="20" y="125" fill="#a89f89" font-family="'Segoe UI', sans-serif" font-size="11">Station: <tspan fill="#fff">Wash &amp; Rinse</tspan></text>
+    <text x="20" y="145" fill="#a89f89" font-family="'Segoe UI', sans-serif" font-size="11">Status: <tspan fill="#2ed573">Sanitized</tspan></text>
+    <text x="20" y="172" fill="#2ed573" font-family="monospace" font-size="10.5">🟢 Ready for Wash</text>
+  </g>
+</svg>

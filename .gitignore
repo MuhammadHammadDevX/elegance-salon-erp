@@ -1,0 +1,42 @@
+# Operating System Files
+Thumbs.db
+Thumbs.db:encryptable
+ehthumbs.db
+ehthumbs_vista.db
+*.stackdump
+[Dd]esktop.ini
+.DS_Store
+.AppleDouble
+.LSOverride
+
+# Editor & IDE Files
+.vscode/
+.idea/
+*.sublime-workspace
+*.sublime-project
+*.swp
+*.swo
+*~
+
+# Server & Application Logs
+*.log
+error_log
+access_log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# Environment & Credentials
+.env
+.env.local
+.env.production
+config.local.php
+
+# PHP & Composer Cache
+/vendor/
+composer.phar
+.phpunit.result.cache
+
+# Temporary & Upload Dumps
+/tmp/
+/temp/

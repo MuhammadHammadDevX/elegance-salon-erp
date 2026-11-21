@@ -1,0 +1,71 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 240" width="100%" height="100%">
+  <defs>
+    <linearGradient id="cardGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#1e1b15" stop-opacity="0.9" />
+      <stop offset="100%" stop-color="#0e0d0b" stop-opacity="0.9" />
+    </linearGradient>
+
+    <linearGradient id="goldText" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#fdf4d0" />
+      <stop offset="50%" stop-color="#dfb75c" />
+      <stop offset="100%" stop-color="#c59b27" />
+    </linearGradient>
+
+    <filter id="cardShadow" x="-10%" y="-10%" width="120%" height="130%">
+      <feDropShadow dx="0" dy="10" stdDeviation="10" flood-color="#000000" flood-opacity="0.6" />
+      <feDropShadow dx="0" dy="1" stdDeviation="2" flood-color="#d4af37" flood-opacity="0.15" />
+    </filter>
+
+    <style>
+      .card { transition: all 0.3s ease; }
+      @keyframes pulseDot {
+        0%, 100% { transform: scale(1); opacity: 0.6; }
+        50% { transform: scale(1.4); opacity: 1; }
+      }
+      .live-dot { transform-origin: center; animation: pulseDot 2s infinite ease-in-out; }
+    </style>
+  </defs>
+
+  <!-- CARD 1: 6-Chair Floor Grid -->
+  <g class="card" transform="translate(15, 20)" filter="url(#cardShadow)">
+    <rect width="275" height="190" rx="16" fill="url(#cardGrad)" stroke="#3a3224" stroke-width="1.5" />
+    <!-- Top Accent Line -->
+    <rect x="20" y="0" width="80" height="3" rx="1.5" fill="#d4af37" />
+    <circle cx="245" cy="35" r="5" fill="#2ed573" class="live-dot" />
+    
+    <text x="25" y="45" fill="#a89f89" font-family="'Segoe UI', Roboto, sans-serif" font-size="12" font-weight="600" letter-spacing="1.5">FLOOR OCCUPANCY</text>
+    <text x="25" y="95" fill="url(#goldText)" font-family="'Playfair Display', Georgia, serif" font-size="36" font-weight="800">6 / 6 Chairs</text>
+    <text x="25" y="130" fill="#e0dacb" font-family="'Segoe UI', Roboto, sans-serif" font-size="13" font-weight="500">Live POS Floor Terminal</text>
+    <text x="25" y="155" fill="#7d7565" font-family="'Segoe UI', Roboto, sans-serif" font-size="11.5">⏱️ Active Elapsed In-Chair Timers</text>
+  </g>
+
+  <!-- CARD 2: Daily Gross Revenue -->
+  <g class="card" transform="translate(310, 20)" filter="url(#cardShadow)">
+    <rect width="275" height="190" rx="16" fill="url(#cardGrad)" stroke="#3a3224" stroke-width="1.5" />
+    <rect x="20" y="0" width="80" height="3" rx="1.5" fill="#2ed573" />
+    <text x="25" y="45" fill="#a89f89" font-family="'Segoe UI', Roboto, sans-serif" font-size="12" font-weight="600" letter-spacing="1.5">RECORDED REVENUE</text>
+    <text x="25" y="95" fill="#2ed573" font-family="'Playfair Display', Georgia, serif" font-size="34" font-weight="800">Rs. 54,400+</text>
+    <text x="25" y="130" fill="#e0dacb" font-family="'Segoe UI', Roboto, sans-serif" font-size="13" font-weight="500">Financial Audit Engine</text>
+    <text x="25" y="155" fill="#7d7565" font-family="'Segoe UI', Roboto, sans-serif" font-size="11.5">📊 1-Click Excel CSV Sales Export</text>
+  </g>
+
+  <!-- CARD 3: Barber Commissions -->
+  <g class="card" transform="translate(605, 20)" filter="url(#cardShadow)">
+    <rect width="275" height="190" rx="16" fill="url(#cardGrad)" stroke="#3a3224" stroke-width="1.5" />
+    <rect x="20" y="0" width="80" height="3" rx="1.5" fill="#ffa502" />
+    <text x="25" y="45" fill="#a89f89" font-family="'Segoe UI', Roboto, sans-serif" font-size="12" font-weight="600" letter-spacing="1.5">STAFF COMMISSIONS</text>
+    <text x="25" y="95" fill="url(#goldText)" font-family="'Playfair Display', Georgia, serif" font-size="36" font-weight="800">18% – 20%</text>
+    <text x="25" y="130" fill="#e0dacb" font-family="'Segoe UI', Roboto, sans-serif" font-size="13" font-weight="500">Automated Barber Splits</text>
+    <text x="25" y="155" fill="#7d7565" font-family="'Segoe UI', Roboto, sans-serif" font-size="11.5">✂️ Asif, Zafar, Aliyan &amp; Zachary</text>
+  </g>
+
+  <!-- CARD 4: Client Satisfaction -->
+  <g class="card" transform="translate(900, 20)" filter="url(#cardShadow)">
+    <rect width="285" height="190" rx="16" fill="url(#cardGrad)" stroke="#3a3224" stroke-width="1.5" />
+    <rect x="20" y="0" width="80" height="3" rx="1.5" fill="#ff4757" />
+    <text x="25" y="45" fill="#a89f89" font-family="'Segoe UI', Roboto, sans-serif" font-size="12" font-weight="600" letter-spacing="1.5">CLIENT RATING</text>
+    <text x="25" y="95" fill="#ffd32a" font-family="'Playfair Display', Georgia, serif" font-size="36" font-weight="800">★ 4.9 / 5.0</text>
+    <text x="25" y="130" fill="#e0dacb" font-family="'Segoe UI', Roboto, sans-serif" font-size="13" font-weight="500">1,000+ Verified Visits</text>
+    <text x="25" y="155" fill="#7d7565" font-family="'Segoe UI', Roboto, sans-serif" font-size="11.5">💬 Real-time Review Moderation</text>
+  </g>
+</svg>

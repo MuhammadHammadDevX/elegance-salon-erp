@@ -1,0 +1,130 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 480" width="100%" height="100%">
+  <defs>
+    <linearGradient id="tierGrad" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#231f18" />
+      <stop offset="100%" stop-color="#12100d" />
+    </linearGradient>
+
+    <linearGradient id="accentGold" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#dfb75c" />
+      <stop offset="100%" stop-color="#b38728" />
+    </linearGradient>
+
+    <filter id="boxShadow" x="-10%" y="-10%" width="120%" height="120%">
+      <feDropShadow dx="0" dy="8" stdDeviation="8" flood-color="#000000" flood-opacity="0.7" />
+    </filter>
+
+    <style>
+      .tier-title { font-family: 'Playfair Display', Georgia, serif; font-size: 18px; font-weight: 700; fill: #f1d78a; }
+      .tier-sub { font-family: 'Segoe UI', Roboto, sans-serif; font-size: 11px; fill: #9e937d; letter-spacing: 1.5px; }
+      .item-text { font-family: 'Segoe UI', Roboto, sans-serif; font-size: 12.5px; fill: #e5ded0; }
+      .pill-badge { font-family: monospace; font-size: 10px; font-weight: bold; }
+    </style>
+  </defs>
+
+  <!-- Background Base -->
+  <rect width="1200" height="480" rx="16" fill="#0d0c0a" stroke="#25211a" stroke-width="1.5" />
+
+  <!-- Flow Connector Lines -->
+  <path d="M 215 320 L 215 370 L 600 370" fill="none" stroke="#d4af37" stroke-width="2" stroke-dasharray="6,4" opacity="0.6" />
+  <path d="M 600 320 L 600 370" fill="none" stroke="#2ed573" stroke-width="2" stroke-dasharray="6,4" opacity="0.6" />
+  <path d="M 985 320 L 985 370 L 600 370" fill="none" stroke="#3742fa" stroke-width="2" stroke-dasharray="6,4" opacity="0.6" />
+
+  <!-- ================= TIER 1: CLIENT PORTAL ================= -->
+  <g transform="translate(30, 40)" filter="url(#boxShadow)">
+    <rect width="370" height="280" rx="14" fill="url(#tierGrad)" stroke="#3d3424" stroke-width="1.5" />
+    <rect x="20" y="0" width="80" height="3" fill="#d4af37" rx="1.5" />
+    
+    <text x="24" y="38" class="tier-title">1. Luxury Client Portal</text>
+    <text x="24" y="58" class="tier-sub">PUBLIC FACING WEB APPLICATION (userside/)</text>
+
+    <!-- Features List -->
+    <g transform="translate(24, 85)">
+      <circle cx="5" cy="5" r="3" fill="#d4af37" />
+      <text x="18" y="9" class="item-text">Bespoke Appointment Booking Engine</text>
+      
+      <circle cx="5" cy="35" r="3" fill="#d4af37" />
+      <text x="18" y="39" class="item-text">Dynamic Stylist &amp; Service Duration Calculator</text>
+
+      <circle cx="5" cy="65" r="3" fill="#d4af37" />
+      <text x="18" y="69" class="item-text">Client Authentication &amp; Cookie Auto-Restore</text>
+
+      <circle cx="5" cy="95" r="3" fill="#d4af37" />
+      <text x="18" y="99" class="item-text">Personal VIP Client Dashboard (History &amp; Bills)</text>
+
+      <circle cx="5" cy="125" r="3" fill="#d4af37" />
+      <text x="18" y="129" class="item-text">Verified Customer Reviews &amp; Testimonial Engine</text>
+    </g>
+
+    <rect x="24" y="240" width="130" height="22" rx="4" fill="#2a2419" stroke="#d4af37" stroke-width="1" />
+    <text x="89" y="255" text-anchor="middle" fill="#f1d78a" class="pill-badge">PUBLIC CLIENT ACCESS</text>
+  </g>
+
+  <!-- ================= TIER 2: RECEPTION TERMINAL ================= -->
+  <g transform="translate(415, 40)" filter="url(#boxShadow)">
+    <rect width="370" height="280" rx="14" fill="url(#tierGrad)" stroke="#22422a" stroke-width="1.5" />
+    <rect x="20" y="0" width="80" height="3" fill="#2ed573" rx="1.5" />
+
+    <text x="24" y="38" class="tier-title">2. Floor Reception Terminal</text>
+    <text x="24" y="58" class="tier-sub" fill="#69a37b">FRONT DESK CASHIER OPERATIONS (Dashboard/)</text>
+
+    <g transform="translate(24, 85)">
+      <circle cx="5" cy="5" r="3" fill="#2ed573" />
+      <text x="18" y="9" class="item-text">Live 6-Chair Floor Occupancy Grid (VIP to Wash)</text>
+      
+      <circle cx="5" cy="35" r="3" fill="#2ed573" />
+      <text x="18" y="39" class="item-text">Real-time In-Chair Service Elapsed Timers</text>
+
+      <circle cx="5" cy="65" r="3" fill="#2ed573" />
+      <text x="18" y="69" class="item-text">Instant Walk-In Billing &amp; Discount Selector</text>
+
+      <circle cx="5" cy="95" r="3" fill="#2ed573" />
+      <text x="18" y="99" class="item-text">1-Click Direct WhatsApp Customer Alerts</text>
+
+      <circle cx="5" cy="125" r="3" fill="#2ed573" />
+      <text x="18" y="129" class="item-text">80mm Thermal Receipt Slip POS Print Engine</text>
+    </g>
+
+    <rect x="24" y="240" width="140" height="22" rx="4" fill="#132719" stroke="#2ed573" stroke-width="1" />
+    <text x="94" y="255" text-anchor="middle" fill="#2ed573" class="pill-badge">ROLE: RECEPTIONIST</text>
+  </g>
+
+  <!-- ================= TIER 3: EXECUTIVE ADMIN ================= -->
+  <g transform="translate(800, 40)" filter="url(#boxShadow)">
+    <rect width="370" height="280" rx="14" fill="url(#tierGrad)" stroke="#2b2d4f" stroke-width="1.5" />
+    <rect x="20" y="0" width="80" height="3" fill="#70a1ff" rx="1.5" />
+
+    <text x="24" y="38" class="tier-title">3. Executive Admin Hub</text>
+    <text x="24" y="58" class="tier-sub" fill="#8898cb">ENTERPRISE MANAGEMENT &amp; BI (Dashboard/)</text>
+
+    <g transform="translate(24, 85)">
+      <circle cx="5" cy="5" r="3" fill="#70a1ff" />
+      <text x="18" y="9" class="item-text">Revenue Trends &amp; Daily Financial Audit Charts</text>
+      
+      <circle cx="5" cy="35" r="3" fill="#70a1ff" />
+      <text x="18" y="39" class="item-text">Enterprise User Directory &amp; RBAC Access Guard</text>
+
+      <circle cx="5" cy="65" r="3" fill="#70a1ff" />
+      <text x="18" y="69" class="item-text">Service Catalog CRUD &amp; Dynamic Packages</text>
+
+      <circle cx="5" cy="95" r="3" fill="#70a1ff" />
+      <text x="18" y="99" class="item-text">Automated 18%-20% Barber Commission Split</text>
+
+      <circle cx="5" cy="125" r="3" fill="#70a1ff" />
+      <text x="18" y="129" class="item-text">1-Click CSV / Excel Sales Report Export</text>
+    </g>
+
+    <rect x="24" y="240" width="120" height="22" rx="4" fill="#171933" stroke="#70a1ff" stroke-width="1" />
+    <text x="84" y="255" text-anchor="middle" fill="#70a1ff" class="pill-badge">ROLE: EXECUTIVE ADMIN</text>
+  </g>
+
+  <!-- ================= BOTTOM TIER: DATABASE CORE ================= -->
+  <g transform="translate(250, 390)" filter="url(#boxShadow)">
+    <rect width="700" height="65" rx="12" fill="#181510" stroke="#d4af37" stroke-width="1.8" />
+    <circle cx="45" cy="32" r="14" fill="#2a2316" stroke="#d4af37" stroke-width="1.5" />
+    <text x="45" y="37" text-anchor="middle" fill="#f1d78a" font-size="14">🗄️</text>
+    
+    <text x="75" y="28" fill="#f1d78a" font-family="'Playfair Display', serif" font-size="15" font-weight="bold">MySQL Relational Database (InnoDB Storage Engine)</text>
+    <text x="75" y="48" fill="#a89f89" font-family="monospace" font-size="11">Tables: `user` • `services` • `staff` • `appointments` • `inventory` • `reviews` • `contact_messages`</text>
+  </g>
+</svg>
